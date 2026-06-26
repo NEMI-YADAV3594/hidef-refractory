@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
@@ -22,13 +22,12 @@
     <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
         <a href="#home" class="logo" aria-label="HiDef Refractory Home">
             <div class="logo-box">
-                <span class="logo-text">
-                    <img src="images/HDR_logo.png" alt="">
-                </span>
+                <span class="logo-text">HDR</span>
             </div>
             <h2>HiDef <span>Refractory</span></h2>
         </a>
 
+        <!-- Desktop Nav -->
         <ul class="nav-links" id="navLinks" role="menubar">
             <li role="none"><a href="#home" role="menuitem" class="active">Home</a></li>
             <li role="none"><a href="#about" role="menuitem">About</a></li>
@@ -39,12 +38,60 @@
             <li role="none"><a href="#contact" role="menuitem" class="nav-cta">Contact</a></li>
         </ul>
 
+        <!-- Hamburger -->
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
         </button>
     </nav>
+
+    <!-- ============================================================
+    MOBILE MENU OVERLAY
+    ============================================================ -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <div class="mobile-menu-panel" id="mobilePanel" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+        <div class="mobile-menu-header">
+            <a href="#home" class="logo" aria-label="HiDef Refractory Home">
+                <div class="logo-box"><span class="logo-text">HDR</span></div>
+                <h2>HiDef <span>Refractory</span></h2>
+            </a>
+            <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">&times;</button>
+        </div>
+
+        <ul class="mobile-nav-list" role="menubar">
+            <li role="none"><a href="#home" role="menuitem" class="active">Home</a></li>
+            <li role="none"><a href="#about" role="menuitem">About</a></li>
+            <li role="none"><a href="#products" role="menuitem">Products</a></li>
+            <li role="none"><a href="#services" role="menuitem">Services</a></li>
+            <li role="none"><a href="#process" role="menuitem">Process</a></li>
+            <li role="none"><a href="#faq" role="menuitem">FAQ</a></li>
+            <li role="none"><a href="#contact" role="menuitem" class="nav-cta-mobile">Contact Us</a></li>
+        </ul>
+
+        <!-- Contact details in mobile menu (always visible) -->
+        <div class="mobile-menu-footer">
+            <a href="tel:+917073964398" class="contact-item">
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <span>+91 70739 64398</span>
+            </a>
+            <a href="mailto:hidefindustries25@gmail.com" class="contact-item">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <span>hidefindustries25@gmail.com</span>
+            </a>
+            <a href="https://maps.google.com/?q=Jatawali+Industrial+Area,+Jaipur" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <i class="fas fa-location-dot" aria-hidden="true"></i>
+                <span>Jatawali Industrial Area, Jaipur</span>
+            </a>
+            <div class="social-row">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/917073964398" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
 
     <!-- ============================================================
     HERO
@@ -139,7 +186,7 @@
                             </div>
                             <h3>Prakash Yadav</h3>
                             <div class="role">Co-Founder &amp; Operations Head</div>
-                            <!-- <div class="since">Since 1996</div> -->
+                            <div class="since">Since 1996</div>
                         </div>
                     </div>
 
@@ -655,7 +702,6 @@
             </div>
 
             <div class="faq-grid" role="list">
-                <!-- 1 -->
                 <div class="faq-item active" role="listitem">
                     <button class="faq-question" aria-expanded="true">
                         What is ramming mass and how does it benefit steel production?
@@ -666,7 +712,6 @@
                     </div>
                 </div>
 
-                <!-- 2 -->
                 <div class="faq-item" role="listitem">
                     <button class="faq-question" aria-expanded="false">
                         What makes HiDef's SILRAM 98.5 superior to other products?
@@ -677,7 +722,6 @@
                     </div>
                 </div>
 
-                <!-- 3 -->
                 <div class="faq-item" role="listitem">
                     <button class="faq-question" aria-expanded="false">
                         Can you provide custom blends for specific furnace requirements?
@@ -688,7 +732,6 @@
                     </div>
                 </div>
 
-                <!-- 4 -->
                 <div class="faq-item" role="listitem">
                     <button class="faq-question" aria-expanded="false">
                         What technical support do you provide after product delivery?
@@ -699,7 +742,6 @@
                     </div>
                 </div>
 
-                <!-- 5 -->
                 <div class="faq-item" role="listitem">
                     <button class="faq-question" aria-expanded="false">
                         What are the typical delivery timeframes for your products?
@@ -710,7 +752,6 @@
                     </div>
                 </div>
 
-                <!-- 6 -->
                 <div class="faq-item" role="listitem">
                     <button class="faq-question" aria-expanded="false">
                         How do you ensure consistent product quality across batches?
@@ -721,7 +762,6 @@
                     </div>
                 </div>
 
-                <!-- 7 -->
                 <div class="faq-item" role="listitem">
                     <button class="faq-question" aria-expanded="false">
                         What packaging and storage recommendations do you provide?
@@ -732,7 +772,6 @@
                     </div>
                 </div>
 
-                <!-- 8 -->
                 <div class="faq-item" role="listitem">
                     <button class="faq-question" aria-expanded="false">
                         Do you supply internationally or only within India?
@@ -743,7 +782,6 @@
                     </div>
                 </div>
 
-                <!-- 9 -->
                 <div class="faq-item" role="listitem">
                     <button class="faq-question" aria-expanded="false">
                         What certifications and compliance standards do your products meet?
@@ -754,7 +792,6 @@
                     </div>
                 </div>
 
-                <!-- 10 -->
                 <div class="faq-item" role="listitem">
                     <button class="faq-question" aria-expanded="false">
                         How do I determine the right product for my furnace application?
@@ -795,13 +832,13 @@
                     </a>
                     <a href="tel:+917073964398" class="item">
                         <i class="fas fa-phone" aria-hidden="true"></i>
-                        <span>+91 7073964398, +91 9887026404</span>
+                        <span>+91 70739 64398 &nbsp;|&nbsp; +91 98870 26404</span>
                     </a>
                     <a href="mailto:hidefindustries25@gmail.com" class="item">
                         <i class="fas fa-envelope" aria-hidden="true"></i>
                         <span>hidefindustries25@gmail.com</span>
                     </a>
-                    <div class="item" style="cursor: default;" role="note">
+                    <div class="item" style="cursor:default;">
                         <i class="fas fa-clock" aria-hidden="true"></i>
                         <span>Mon &ndash; Sat: 9:00 AM &ndash; 6:00 PM (IST)</span>
                     </div>
@@ -812,20 +849,20 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Your Name *</label>
-                            <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true" />
+                            <input type="text" id="name" placeholder="Your full name" required aria-required="true" />
                         </div>
                         <div class="form-group">
                             <label for="email">Your Email *</label>
-                            <input type="email" id="email" name="email" placeholder="you@example.com" required aria-required="true" />
+                            <input type="email" id="email" placeholder="you@example.com" required aria-required="true" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+                        <input type="tel" id="phone" placeholder="Enter your phone number" />
                     </div>
                     <div class="form-group">
                         <label for="service">Service of Interest</label>
-                        <select id="service" name="service">
+                        <select id="service">
                             <option value="">Select a service</option>
                             <option value="Ramming Mass Supply">Ramming Mass Supply</option>
                             <option value="On-Site Assistance">On-Site Assistance</option>
@@ -838,7 +875,7 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Your Message</label>
-                        <textarea id="message" name="message" placeholder="Tell us about your requirements..." rows="4"></textarea>
+                        <textarea id="message" placeholder="Tell us about your requirements..." rows="4"></textarea>
                     </div>
                     <div class="form-actions">
                         <button type="submit" class="btn-primary">
@@ -858,9 +895,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="#home" class="logo" aria-label="HiDef Refractory Home">
-                        <div class="logo-box">
-                            <span class="logo-text">HDR</span>
-                        </div>
+                        <div class="logo-box"><span class="logo-text">HDR</span></div>
                         <h2>HiDef <span>Refractory</span></h2>
                     </a>
                     <p>Innovating refractory solutions for a stronger steel industry. Committed to quality, performance, and customer satisfaction.</p>
@@ -888,7 +923,7 @@
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
-                        <li><a href="tel:+917073964398">+91 7073964398</a></li>
+                        <li><a href="tel:+917073964398">+91 70739 64398</a></li>
                         <li><a href="mailto:hidefindustries25@gmail.com">hidefindustries25@gmail.com</a></li>
                         <li>Jatawali Industrial Area, Jaipur</li>
                     </ul>
