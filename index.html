@@ -11,8 +11,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- ===== SEPARATE CSS FILE ===== -->
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
@@ -22,9 +22,7 @@
     <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
         <a href="#home" class="logo" aria-label="HiDef Refractory Home">
             <div class="logo-box">
-                <span class="logo-text">
-                    <img src="images/HDR_logo.png" alt="">
-                </span>
+                <img src="HDR_logo.png" alt="HiDef Industries Logo" />
             </div>
             <h2>HiDef <span>Refractory</span></h2>
         </a>
@@ -36,7 +34,7 @@
             <li role="none"><a href="#services" role="menuitem">Services</a></li>
             <li role="none"><a href="#process" role="menuitem">Process</a></li>
             <li role="none"><a href="#faq" role="menuitem">FAQ</a></li>
-            <li role="none"><a href="#contact" role="menuitem" class="nav-cta">Contact</a></li>
+            <li role="none"><a href="#contact" role="menuitem" >Contact</a></li>
         </ul>
 
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -51,7 +49,7 @@
     ============================================================ -->
     <section class="hero" id="home" aria-label="Hero banner">
         <div class="hero-bg">
-            <img src="images/Mining_background.png" alt="Industrial mining and refinery background" loading="eager" />
+            <img src="Mining_background.png" alt="Industrial mining and refinery background" loading="eager" />
         </div>
 
         <div class="container">
@@ -74,6 +72,10 @@
                 </div>
             </div>
         </div>
+
+        <!-- floating shape decorations -->
+        <div class="hero-shape shape-1"></div>
+        <div class="hero-shape shape-2"></div>
     </section>
 
     <!-- ============================================================
@@ -124,8 +126,8 @@
                     <div class="leaders">
                         <div class="leader">
                             <div class="leader-image">
-                                <img src="images/Hs.png" alt="Hanuman Sahay Yadav – Founder" />
-                                <a href="https://linkedin.com/in/founder" target="_blank" rel="noopener" class="linkedin-btn" aria-label="LinkedIn profile of founder">in</a>
+                                <img src="Hs.png" alt="Hanuman Sahay Yadav – Founder" />
+                                <!-- <a href="https://linkedin.com/in/founder" target="_blank" rel="noopener" class="linkedin-btn" aria-label="LinkedIn profile of founder">in</a> -->
                             </div>
                             <h3>Hanuman Sahay Yadav</h3>
                             <div class="role">Founder &amp; Mechanical Engineer</div>
@@ -134,8 +136,8 @@
 
                         <div class="leader">
                             <div class="leader-image">
-                                <img src="images/veer.jpg" alt="Co-Founder Prakash Yadav" />
-                                <a href="https://linkedin.com/in/cofounder" target="_blank" rel="noopener" class="linkedin-btn" aria-label="LinkedIn profile of co-founder">in</a>
+                                <img src="veer.jpg" alt="Co-Founder Prakash Yadav" />
+                                <!-- <a href="https://linkedin.com/in/cofounder" target="_blank" rel="noopener" class="linkedin-btn" aria-label="LinkedIn profile of co-founder">in</a> -->
                             </div>
                             <h3>Prakash Yadav</h3>
                             <div class="role">Co-Founder &amp; Operations Head</div>
@@ -161,18 +163,18 @@
 
                     <div class="founder-message">
                         <p>
-                            &ldquo;From my early days in 1994 as a mechanical engineer on the
+                            “From my early days in 1994 as a mechanical engineer on the
                             plant floor to creating HiDef, the journey has been defined
                             by one belief — endurance is the true measure of excellence
                             in the refractory industry. HiDef is not just a brand, it's
-                            the definition of endurance.&rdquo;
+                            the definition of endurance.”
                         </p>
-                        <h4>&mdash; Hanuman Sahay Yadav, Founder</h4>
+                        <h4>— Hanuman Sahay Yadav, Founder</h4>
                     </div>
 
                     <div class="stats" id="statsContainer">
                         <div class="stat-card">
-                            <h2><span class="counter" data-target="10">0</span>+</h2>
+                            <h2><span class="counter" data-target="32">0</span>+</h2>
                             <p>Years Experience</p>
                         </div>
                         <div class="stat-card">
@@ -238,7 +240,7 @@
             <div class="products-grid">
                 <div class="product-card">
                     <span class="tag">Best Seller</span>
-                    <h3>HiDef &ndash; SILRAM 98.5</h3>
+                    <h3>HiDef – SILRAM 98.5</h3>
                     <p class="sub">High Quality Premixed Boron Oxide Silica Ramming Mass</p>
                     <ul>
                         <li>Superior thermal resistance</li>
@@ -251,7 +253,7 @@
 
                 <div class="product-card">
                     <span class="tag">Ladle Grade</span>
-                    <h3>HiDef &ndash; LRM</h3>
+                    <h3>HiDef – LRM</h3>
                     <p class="sub">High Quality Premixed Boric Acid Silica Ramming Mass</p>
                     <ul>
                         <li>Excellent slag resistance</li>
@@ -264,7 +266,7 @@
 
                 <div class="product-card">
                     <span class="tag">Capping Mix</span>
-                    <h3>HiDef &ndash; Nali Top</h3>
+                    <h3>HiDef – Nali Top</h3>
                     <p class="sub">Nali &amp; Top Capping Silica Mix</p>
                     <ul>
                         <li>Maximum sealing strength</li>
@@ -292,7 +294,7 @@
     </section>
 
     <!-- ============================================================
-    SERVICES
+    SERVICES — with working Learn More modals
     ============================================================ -->
     <section class="section-white" id="services" aria-label="Our services">
         <div class="container">
@@ -303,6 +305,7 @@
             </div>
 
             <div class="services-grid">
+                <!-- Service 1 -->
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-truck" aria-hidden="true"></i></div>
                     <h3>High-Purity Ramming Mass Supply</h3>
@@ -312,6 +315,7 @@
                     </div>
                 </div>
 
+                <!-- Service 2 -->
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-hard-hat" aria-hidden="true"></i></div>
                     <h3>On-Site Engineer Assistance</h3>
@@ -321,6 +325,7 @@
                     </div>
                 </div>
 
+                <!-- Service 3 -->
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-cogs" aria-hidden="true"></i></div>
                     <h3>Customized Material Recommendations</h3>
@@ -330,6 +335,7 @@
                     </div>
                 </div>
 
+                <!-- Service 4 -->
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i></div>
                     <h3>Technical Guidance</h3>
@@ -339,6 +345,7 @@
                     </div>
                 </div>
 
+                <!-- Service 5 -->
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-headset" aria-hidden="true"></i></div>
                     <h3>Post-Sale Support</h3>
@@ -348,6 +355,7 @@
                     </div>
                 </div>
 
+                <!-- Service 6 -->
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-check-circle" aria-hidden="true"></i></div>
                     <h3>Quality Assurance</h3>
@@ -363,6 +371,8 @@
     <!-- ============================================================
     MODALS
     ============================================================ -->
+
+    <!-- Modal 1: Ramming Mass -->
     <div class="modal-overlay" id="modal-ramming">
         <div class="modal-content">
             <button class="modal-close" aria-label="Close modal">&times;</button>
@@ -372,9 +382,9 @@
             <div class="detail-block">
                 <h4><i class="fas fa-cube"></i> Product Range</h4>
                 <ul>
-                    <li>HiDef SILRAM 98.5 &ndash; Main lining for induction furnaces</li>
-                    <li>HiDef LRM &ndash; Specialized ladle ramming mass</li>
-                    <li>HiDef Nali Top &ndash; Nali &amp; top capping silica mix</li>
+                    <li>HiDef SILRAM 98.5 – Main lining for induction furnaces</li>
+                    <li>HiDef LRM – Specialized ladle ramming mass</li>
+                    <li>HiDef Nali Top – Nali &amp; top capping silica mix</li>
                     <li>Custom silica blends for specific applications</li>
                 </ul>
             </div>
@@ -403,6 +413,7 @@
         </div>
     </div>
 
+    <!-- Modal 2: On-Site Engineer Assistance -->
     <div class="modal-overlay" id="modal-onsite">
         <div class="modal-content">
             <button class="modal-close" aria-label="Close modal">&times;</button>
@@ -443,6 +454,7 @@
         </div>
     </div>
 
+    <!-- Modal 3: Customized Material Recommendations -->
     <div class="modal-overlay" id="modal-custom">
         <div class="modal-content">
             <button class="modal-close" aria-label="Close modal">&times;</button>
@@ -483,6 +495,7 @@
         </div>
     </div>
 
+    <!-- Modal 4: Technical Guidance -->
     <div class="modal-overlay" id="modal-tech">
         <div class="modal-content">
             <button class="modal-close" aria-label="Close modal">&times;</button>
@@ -523,6 +536,7 @@
         </div>
     </div>
 
+    <!-- Modal 5: Post-Sale Support -->
     <div class="modal-overlay" id="modal-post">
         <div class="modal-content">
             <button class="modal-close" aria-label="Close modal">&times;</button>
@@ -563,6 +577,7 @@
         </div>
     </div>
 
+    <!-- Modal 6: Quality Assurance -->
     <div class="modal-overlay" id="modal-qa">
         <div class="modal-content">
             <button class="modal-close" aria-label="Close modal">&times;</button>
@@ -673,7 +688,7 @@
                         <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div class="faq-answer">
-                        SILRAM 98.5 contains 98.5% silicon carbide content, offering exceptional thermal conductivity, chemical resistance, and thermal shock resistance. It provides 30&ndash;40% longer campaign life compared to standard products, reduced maintenance costs, faster heat-up times, and superior corrosion resistance against molten metals and slags.
+                        SILRAM 98.5 contains 98.5% silicon carbide content, offering exceptional thermal conductivity, chemical resistance, and thermal shock resistance. It provides 30–40% longer campaign life compared to standard products, reduced maintenance costs, faster heat-up times, and superior corrosion resistance against molten metals and slags.
                     </div>
                 </div>
 
@@ -706,7 +721,7 @@
                         <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div class="faq-answer">
-                        Standard products like SILRAM 98.5 and LRM are typically delivered within 7&ndash;10 days across India. Custom blends require 15&ndash;20 days for formulation and testing. We maintain strategic inventory locations to ensure faster delivery to major steel production hubs. Urgent requirements can be expedited based on availability.
+                        Standard products like SILRAM 98.5 and LRM are typically delivered within 7–10 days across India. Custom blends require 15–20 days for formulation and testing. We maintain strategic inventory locations to ensure faster delivery to major steel production hubs. Urgent requirements can be expedited based on availability.
                     </div>
                 </div>
 
@@ -728,7 +743,7 @@
                         <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div class="faq-answer">
-                        Our products are supplied in moisture-resistant packaging (25kg/50kg bags or bulk containers). Store in dry, covered areas away from direct moisture, maintain temperature below 40&deg;C, use within 12 months of manufacture for optimal performance, and follow FIFO (First In, First Out) inventory management.
+                        Our products are supplied in moisture-resistant packaging (25kg/50kg bags or bulk containers). Store in dry, covered areas away from direct moisture, maintain temperature below 40°C, use within 12 months of manufacture for optimal performance, and follow FIFO (First In, First Out) inventory management.
                     </div>
                 </div>
 
@@ -801,31 +816,33 @@
                         <i class="fas fa-envelope" aria-hidden="true"></i>
                         <span>hidefindustries25@gmail.com</span>
                     </a>
-                    <div class="item" style="cursor: default;" role="note">
+                    <div class="item" style="cursor:default;">
                         <i class="fas fa-clock" aria-hidden="true"></i>
-                        <span>Mon &ndash; Sat: 9:00 AM &ndash; 6:00 PM (IST)</span>
+                        <span>Mon - Sat: 9:00 AM - 6:00 PM (IST)</span>
                     </div>
                 </div>
 
                 <form class="contact-form" id="contactForm" novalidate>
                     <h3>Send Us a Message</h3>
                     <div class="form-row">
-                        <div class="form-group">
+                        <div class="form-group" id="nameGroup">
                             <label for="name">Your Name *</label>
-                            <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true" />
+                            <input type="text" id="name" placeholder="Your full name" required aria-required="true" />
+                            <span class="error-text">Please enter your name.</span>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" id="emailGroup">
                             <label for="email">Your Email *</label>
-                            <input type="email" id="email" name="email" placeholder="you@example.com" required aria-required="true" />
+                            <input type="email" id="email" placeholder="you@example.com" required aria-required="true" />
+                            <span class="error-text">Please enter a valid email address.</span>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+                        <input type="tel" id="phone" placeholder="Enter your phone number" />
                     </div>
                     <div class="form-group">
                         <label for="service">Service of Interest</label>
-                        <select id="service" name="service">
+                        <select id="service">
                             <option value="">Select a service</option>
                             <option value="Ramming Mass Supply">Ramming Mass Supply</option>
                             <option value="On-Site Assistance">On-Site Assistance</option>
@@ -838,7 +855,7 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Your Message</label>
-                        <textarea id="message" name="message" placeholder="Tell us about your requirements..." rows="4"></textarea>
+                        <textarea id="message" placeholder="Tell us about your requirements..." rows="4"></textarea>
                     </div>
                     <div class="form-actions">
                         <button type="submit" class="btn-primary">
@@ -859,8 +876,7 @@
                 <div class="footer-brand">
                     <a href="#home" class="logo" aria-label="HiDef Refractory Home">
                         <div class="logo-box">
-                            <span class="logo-text">HDR                               
-                            </span>
+                            <img src="HDR_logo.png" alt="HiDef Industries Logo" />
                         </div>
                         <h2>HiDef <span>Refractory</span></h2>
                     </a>
@@ -881,7 +897,7 @@
                     <h4>Products</h4>
                     <ul>
                         <li><a href="#products">SILRAM 98.5</a></li>
-                        <li><a href="#products">HiDef &ndash; LRM</a></li>
+                        <li><a href="#products">HiDef – LRM</a></li>
                         <li><a href="#products">Nali Top</a></li>
                         <li><a href="#products">Custom Mixes</a></li>
                     </ul>
@@ -897,7 +913,7 @@
             </div>
 
             <div class="footer-bottom">
-                <span>&copy; 2026 HiDef Refractory. All rights reserved.</span>
+                <span>&copy; <span id="currentYear">2026</span> HiDef Refractory. All rights reserved.</span>
                 <div class="socials">
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
                     <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
@@ -909,6 +925,13 @@
     </footer>
 
     <!-- ============================================================
+    BACK TO TOP
+    ============================================================ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- ============================================================
     FLOATING WHATSAPP
     ============================================================ -->
     <a href="https://wa.me/917073964398" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Quick help on WhatsApp">
@@ -918,9 +941,7 @@
         <span class="whatsapp-label">Quick Help</span>
     </a>
 
-    <!-- ============================================================
-    JAVASCRIPT
-    ============================================================ -->
+    <!-- ===== SEPARATE JS FILE ===== -->
     <script src="js/script.js"></script>
 
 </body>
