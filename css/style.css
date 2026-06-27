@@ -463,7 +463,7 @@ img {
 .hero-content p {
     margin-top: 24px;
     font-size: clamp(1rem, 1.4vw, 1.25rem);
-    color: var(--text-muted);
+    color: #0f172a; /* or var(--text-dark) */
     line-height: 1.8;
     max-width: 580px;
 }
