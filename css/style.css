@@ -40,7 +40,7 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    color: var(--text-dark);
+    color: var(--text-black);
     line-height: 1.6;
     background: var(--bg-light);
     overflow-x: hidden;
